@@ -1,5 +1,4 @@
 import { useState } from "react"
-import { Link } from "react-router-dom"
 
 function Header ({user}) {
 	const [menu, setMenu] = useState(false)
@@ -24,12 +23,12 @@ function Header ({user}) {
 
 				<nav className="nav-menu">
 					<ul>
-						<li><Link to="#hero"><i className="fas fa-home"></i> <span>Home</span></Link></li>
-						<li><Link to="#about"><i className="fas fa-user"></i> <span>About</span></Link></li>
-						<li><Link to="#facts"><i className="fas fa-check"></i> <span>Facts</span></Link></li>
-						<li><Link to="#resume"><i className="fas fa-file"></i> <span>Resume</span></Link></li>
-						<li><Link to="#portfolio"><i className="fas fa-portrait"></i> Portfolio</Link></li>
-						<li><Link to="#contact"><i className="fas fa-envelope"></i> Contact</Link></li>
+						<li><a href="#hero"><i className="fas fa-home"></i> <span>Home</span></a></li>
+						<li><a href="#about"><i className="fas fa-user"></i> <span>About</span></a></li>
+						<li><a href="#facts"><i className="fas fa-check"></i> <span>Facts</span></a></li>
+						<li><a href="#resume"><i className="fas fa-file"></i> <span>Resume</span></a></li>
+						<li><a href="#portfolio"><i className="fas fa-portrait"></i> Portfolio</a></li>
+						<li><a href="#contact"><i className="fas fa-envelope"></i> Contact</a></li>
 					</ul>
 				</nav>
 				<button type="button" className="mobile-nav-toggle d-xl-none"
