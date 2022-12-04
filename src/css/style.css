@@ -1,4 +1,4 @@
-
+ #root
   body {
     font-family: "Open Sans", sans-serif;
   }
@@ -183,7 +183,7 @@
     text-decoration: none;
   }
   
-  #main {
+  #root {
     margin-top: 0;
     margin-left: 300px;
   }
@@ -193,7 +193,7 @@
       left: -300px;
     }
   
-    #main {
+    #root {
       margin-left: 0;
     }
   }
