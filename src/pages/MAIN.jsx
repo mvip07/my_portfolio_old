@@ -20,34 +20,27 @@ import { allAbout } from "../axios/url.jsx"
 
 function Main() {
     const [about, setAbout] = useState([])
-    const [aboutReq, setAboutReq] = useState(false)
     useEffect(() => {
         API.get(allAbout).then(res => {
             setAbout(...res.data)
-            setAboutReq(true)
         })
     }, [])
 
     return (
         <div>
-            {
-                aboutReq === true ?
-                    <div>
-                        <ToggleBtn />
-                        <Hero user={about}/>
-                        <Header user={about} />
-                        <About user={about}/>
-                        <Facts />
-                        <Skills />
-                        <Resume />
-                        <Portfolio />
-                        <Testimonials />
-                        <Contact />
-                        <Footer />
-                    </div>
-                        :
-                    <Loader />
-            }
+           
+            <ToggleBtn />
+            <Hero user={about}/>
+            <Header user={about} />
+            <About user={about}/>
+            <Facts />
+            <Skills />
+            <Resume />
+            <Portfolio />
+            <Testimonials />
+            <Contact />
+            <Footer />
+          
         </div>
     )
 }
