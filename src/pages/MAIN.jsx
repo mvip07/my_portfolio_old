@@ -2,21 +2,19 @@ import { useState, useEffect } from "react"
 
 import API from "../axios/axios"
 
-import About from "./ABOUT.jsx"
-import Header from "./HEADER.jsx"
-import Resume from "./RESUME.jsx"
-import Portfolio from "./PORTFOLIO.jsx"
-import Contact from "./CONTACT.jsx"
-import Hero from "./HERO.jsx"
-import Skills from "./SKILLS.jsx"
-import Facts from "./FACTS.jsx"
-import Testimonials from "./TESTIMONIALS.jsx"
+import About from "./ABOUT"
+import Header from "./HEADER"
+import Resume from "./RESUME"
+import Portfolio from "./PORTFOLIO"
+import Contact from "./CONTACT"
+import Hero from "./HERO"
+import Skills from "./SKILLS"
+import Facts from "./FACTS"
+import Testimonials from "./TESTIMONIALS"
 
-import Footer from "../components/Footer.jsx"
-import ToggleBtn from "../components/Button.jsx"
-import Loader from "../components/Loader.jsx"
-
-import { allAbout } from "../axios/url.jsx"
+import Footer from "../components/Footer"
+import ToggleBtn from "../components/Button"
+import { allAbout } from "../axios/url"
 
 function Main() {
     const [about, setAbout] = useState([])

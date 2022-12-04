@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import API from "../axios/axios"
 import { allPortfolio } from "../axios/url"
-import PortfolioDetail from "../components/PortfolioDetail.jsx"
+import PortfolioDetail from "../components/PortfolioDetail"
 
 function Portfolio() {
     const [postfolio, setPortfolio] = useState([])

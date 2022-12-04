@@ -7,7 +7,7 @@ import "./css/style.css"
 import API from "./axios/axios"
 import { allView, createView } from "./axios/url"
 
-import MAIN from "./pages/MAIN"
+import Main from "./pages/MAIN"
 import AdminMain from "./admin/pages/ADMINMAIN";
 import AboutAdmin from "./admin/pages/about/ADDABOUT";
 import EducationAdmin from "./admin/pages/education/ADDEDUCATION";
@@ -43,7 +43,7 @@ function App() {
   
     return (
             <Routes>
-                <Route path="/" element={<MAIN />} />
+                <Route path="/" element={<Main />} />
         
                 <Route path="/about/admin" element={<About />} />
                 <Route path="/about/create/admin" element={<AboutAdmin /> } />

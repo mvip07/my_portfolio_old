@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import API from "../axios/axios"
 import { allTestimonial } from "../axios/url"
-import TestimonialDetail from "../components/TestimonialDetail.jsx"
+import TestimonialDetail from "../components/TestimonialDetail"
 
 function Testimonials() {
     const [testimonial, setTestimonial] = useState([])
