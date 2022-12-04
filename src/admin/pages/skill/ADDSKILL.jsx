@@ -3,7 +3,7 @@ import API from "../../../axios/axios"
 import { createSkill } from "../../../axios/url"
 import AdminNavbar from "../../components/AdminNavbar";
 
-export const SkillAdmin = () => {
+function SkillAdmin () {
 
     const [skillsName, setSkillsName] = useState("")
     const [skillsPercentage, setSkillsPercentage] = useState("")
@@ -45,6 +45,7 @@ export const SkillAdmin = () => {
                 </div>
             </div>
         </>
-       
     )
 } 
+
+export default SkillAdmin

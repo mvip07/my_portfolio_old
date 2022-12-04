@@ -4,7 +4,7 @@ import { data, send } from "../../../axios/firebaseSend"
 import { createPortfolio } from "../../../axios/url"
 import AdminNavbar from "../../components/AdminNavbar";
 
-export const PortfolioAdmin = () => {
+function PortfolioAdmin () {
     const [category, setCategory] = useState("")
     const [githubUrl, setGithubUrl] = useState("")
     const [serverUrl, setServerUrl] = useState("")
@@ -77,3 +77,5 @@ export const PortfolioAdmin = () => {
        
     )
 } 
+
+export default PortfolioAdmin

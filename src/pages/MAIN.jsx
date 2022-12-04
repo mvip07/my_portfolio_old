@@ -28,30 +28,20 @@ function Main() {
         })
     }, [])
 
-
-    const [onlineKnow, setOnline] = useState(false)
-    useEffect(() => setOnline(navigator.onLine), [onlineKnow])
     return (
-        <>
-            {
-                onlineKnow === true && aboutReq === true ?
-                    <>
-                        <ToggleBtn />
-                        <Hero user={about}/>
-                        <Header user={about} />
-                        <About user={about}/>
-                        <Facts />
-                        <Skills />
-                        <Resume />
-                        <Portfolio />
-                        <Testimonials />
-                        <Contact />
-                        <Footer />
-                    </>
-                        :
-                    <Loader />
-            }
-        </>
+        <div>
+            <ToggleBtn />
+            <Hero user={about}/>
+            <Header user={about} />
+            <About user={about}/>
+            <Facts />
+            <Skills />
+            <Resume />
+            <Portfolio />
+            <Testimonials />
+            <Contact />
+            <Footer />
+        </div>
     )
 }
 

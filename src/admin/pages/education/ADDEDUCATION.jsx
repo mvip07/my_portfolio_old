@@ -3,7 +3,7 @@ import API from "../../../axios/axios"
 import { createEducation } from "../../../axios/url"
 import AdminNavbar from "../../components/AdminNavbar";
 
-export const EducationAdmin = () => {
+function EducationAdmin () {
     const [educationName, setEducationName] = useState("")
     const [educationYear, setEducationYear] = useState("")
     const [educationWhere, setEducationWhere] = useState("")
@@ -73,3 +73,5 @@ export const EducationAdmin = () => {
         </>
     )
 } 
+
+export default EducationAdmin

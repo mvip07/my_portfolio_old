@@ -4,7 +4,7 @@ import { send, data } from "../../../axios/firebaseSend"
 import { createAbout } from "../../../axios/url"
 import AdminNavbar from "../../components/AdminNavbar";
 
-export const AboutAdmin = () => {
+function AboutAdmin () {
     const [fullName, setFullName] = useState("")
     const [job, setJob] = useState("")
     const [birthday, setBirthday] = useState("")
@@ -181,3 +181,5 @@ export const AboutAdmin = () => {
         </>
     )
 } 
+
+export default AboutAdmin

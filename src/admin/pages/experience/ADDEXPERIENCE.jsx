@@ -2,8 +2,7 @@ import React, { useState } from "react"
 import API from "../../../axios/axios"
 import { createExperience } from "../../../axios/url"
 import AdminNavbar from "../../components/AdminNavbar";
-
-export const ExperienceAdmin = () => {
+function ExperienceAdmin () {
     const [experienceName, setExperienceName] = useState("")
     const [experienceYear, setExperienceYear] = useState("")
     const [experienceWhere, setExperienceWhere] = useState("")
@@ -73,3 +72,5 @@ export const ExperienceAdmin = () => {
        
     )
 } 
+
+export default ExperienceAdmin

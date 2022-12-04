@@ -9,18 +9,18 @@ import { allView, createView } from "./axios/url"
 
 import MAIN from "./pages/MAIN"
 import AdminMain from "./admin/pages/ADMINMAIN";
-import {AboutAdmin} from "./admin/pages/about/ADDABOUT";
-import {EducationAdmin} from "./admin/pages/education/ADDEDUCATION";
-import {SkillAdmin} from "./admin/pages/skill/ADDSKILL";
-import {PortfolioAdmin} from "./admin/pages/portfolio/ADDPORTFOLIO";
-import {ExperienceAdmin} from "./admin/pages/experience/ADDEXPERIENCE";
+import AboutAdmin from "./admin/pages/about/ADDABOUT";
+import EducationAdmin from "./admin/pages/education/ADDEDUCATION";
+import SkillAdmin from "./admin/pages/skill/ADDSKILL";
+import PortfolioAdmin from "./admin/pages/portfolio/ADDPORTFOLIO";
+import ExperienceAdmin from "./admin/pages/experience/ADDEXPERIENCE";
 import About from "./admin/pages/about/ABOUT";
 import Education from "./admin/pages/education/EDUCATION";
 import Skill from "./admin/pages/skill/SCKILL";
 import Portfolio from "./admin/pages/portfolio/PORTFOLIO";
 import Experience from "./admin/pages/experience/EXPERIENCE";
 
-import {UpdateAbout} from "./admin/pages/about/EDITABOUT";
+import UpdateAbout from "./admin/pages/about/EDITABOUT";
 import UpdateEducation from "./admin/pages/education/EDITEDUCATION";
 import UpdateSkills from "./admin/pages/skill/EDITSKILL";
 import UpdatePortfolio from "./admin/pages/portfolio/EDITPORTFOLIO";

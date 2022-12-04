@@ -4,7 +4,7 @@ import { send, data } from "../../../axios/firebaseSend"
 import { allAbout, updateAbout } from "../../../axios/url"
 import AdminNavbar from "../../components/AdminNavbar";
 
-export const UpdateAbout = () => {
+function UpdateAbout () {
 
     const [all, setAll] = useState({})
     const [fullName, setFullName] = useState("")
@@ -175,3 +175,5 @@ export const UpdateAbout = () => {
         </>
     )
 } 
+
+export default UpdateAbout
