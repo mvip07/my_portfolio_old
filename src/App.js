@@ -1,8 +1,7 @@
-import { Route, Routes, } from "react-router-dom"
-import axios from "axios"
-
 import "./css/bootstrap.css"
 import "./css/style.css"
+import { Route, Routes, } from "react-router-dom"
+import axios from "axios"
 
 import API from "./axios/axios"
 import { allView, createView } from "./axios/url"
