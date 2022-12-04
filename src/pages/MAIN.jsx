@@ -14,32 +14,44 @@ import Testimonials from "./TESTIMONIALS"
 
 import Footer from "../components/Footer"
 import ToggleBtn from "../components/Button"
+import Loader from "../components/Loader"
+
 import { allAbout } from "../axios/url"
 
 function Main() {
     const [about, setAbout] = useState([])
+    const [aboutReq, setAboutReq] = useState(false)
     useEffect(() => {
         API.get(allAbout).then(res => {
             setAbout(...res.data)
+            setAboutReq(true)
         })
     }, [])
 
+
+    const [onlineKnow, setOnline] = useState(false)
+    useEffect(() => setOnline(navigator.onLine), [onlineKnow])
     return (
-        <div>
-           
-            <ToggleBtn />
-            <Hero user={about}/>
-            <Header user={about} />
-            <About user={about}/>
-            <Facts />
-            <Skills />
-            <Resume />
-            <Portfolio />
-            <Testimonials />
-            <Contact />
-            <Footer />
-          
-        </div>
+        <>
+            {
+                onlineKnow === true && aboutReq === true ?
+                    <>
+                        <ToggleBtn />
+                        <Hero user={about}/>
+                        <Header user={about} />
+                        <About user={about}/>
+                        <Facts />
+                        <Skills />
+                        <Resume />
+                        <Portfolio />
+                        <Testimonials />
+                        <Contact />
+                        <Footer />
+                    </>
+                        :
+                    <Loader />
+            }
+        </>
     )
 }
 
