@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import API from "../../../axios/axios"
 import { send, data } from "../../../axios/firebaseSend"
 import { createAbout } from "../../../axios/url"
-import AdminNavbar from "../../components/AdminNavbar.jsx";
+import AdminNavbar from "../../components/AdminNavbar";
 
 export const AboutAdmin = () => {
     const [fullName, setFullName] = useState("")

@@ -1,4 +1,4 @@
-import AdminNavbar from "../components/AdminNavbar.jsx";
+import AdminNavbar from "../components/AdminNavbar";
 function AdminMain () {
     return (
 		<AdminNavbar/>

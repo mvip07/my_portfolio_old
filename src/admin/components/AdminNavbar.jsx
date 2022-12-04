@@ -4,7 +4,7 @@ import {allAbout} from "../../axios/url";
 import {Link, useNavigate} from "react-router-dom";
 
 
-const AdminNavbar = ({Event}) => {
+const AdminNavbar = () => {
 	const navigate = useNavigate()
 	const [user, setUser] = useState([])
 	const [menu, setMenu] = useState(false)

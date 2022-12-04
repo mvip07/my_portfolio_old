@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import API from "../../../axios/axios"
 import { data, send } from "../../../axios/firebaseSend"
 import { createPortfolio } from "../../../axios/url"
-import AdminNavbar from "../../components/AdminNavbar.jsx";
+import AdminNavbar from "../../components/AdminNavbar";
 
 export const PortfolioAdmin = () => {
     const [category, setCategory] = useState("")

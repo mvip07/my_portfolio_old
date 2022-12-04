@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import API from "../../../axios/axios"
 import { createSkill } from "../../../axios/url"
-import AdminNavbar from "../../components/AdminNavbar.jsx";
+import AdminNavbar from "../../components/AdminNavbar";
 
 export const SkillAdmin = () => {
 

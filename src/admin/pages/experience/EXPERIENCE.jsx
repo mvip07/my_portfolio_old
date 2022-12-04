@@ -1,4 +1,4 @@
-import AdminNavbar from "../../components/AdminNavbar.jsx";
+import AdminNavbar from "../../components/AdminNavbar";
 import React, {useEffect, useState} from "react";
 import API from "../../../axios/axios";
 import {allExperience, deleteExperience} from "../../../axios/url";

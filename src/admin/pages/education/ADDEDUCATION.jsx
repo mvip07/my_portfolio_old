@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import API from "../../../axios/axios"
 import { createEducation } from "../../../axios/url"
-import AdminNavbar from "../../components/AdminNavbar.jsx";
+import AdminNavbar from "../../components/AdminNavbar";
 
 export const EducationAdmin = () => {
     const [educationName, setEducationName] = useState("")

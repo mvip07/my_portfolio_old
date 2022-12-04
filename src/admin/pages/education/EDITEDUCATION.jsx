@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import API from "../../../axios/axios";
 import {allEducation, updateEducation} from "../../../axios/url";
 import { useParams } from "react-router-dom";
-import AdminNavbar from "../../components/AdminNavbar.jsx";
+import AdminNavbar from "../../components/AdminNavbar";
 
 function UpdateEducation () {
 	const { id } = useParams()

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import API from "../../../axios/axios"
 import { send, data } from "../../../axios/firebaseSend"
 import { allAbout, updateAbout } from "../../../axios/url"
-import AdminNavbar from "../../components/AdminNavbar.jsx";
+import AdminNavbar from "../../components/AdminNavbar";
 
 export const UpdateAbout = () => {
 

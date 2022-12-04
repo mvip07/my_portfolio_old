@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import AdminNavbar from "../../components/AdminNavbar.jsx";
+import AdminNavbar from "../../components/AdminNavbar";
 import {useParams} from "react-router-dom";
 import API from "../../../axios/axios";
 import {updateSkill, allSkill} from "../../../axios/url";

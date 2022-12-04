@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import API from "../../../axios/axios";
 import {allAbout, deleteAbout} from "../../../axios/url";
 import {useNavigate} from "react-router-dom";
-import AdminNavbar from "../../components/AdminNavbar.jsx";
+import AdminNavbar from "../../components/AdminNavbar";
 
 function About () {
 	const navigate = useNavigate()
