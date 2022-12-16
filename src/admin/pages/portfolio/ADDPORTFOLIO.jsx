@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import API from "../../../axios/axios"
-import { data, send } from "../../../axios/firebaseSend"
+import { comeimages, send } from "../../../axios/firebaseSend"
 import { createPortfolio } from "../../../axios/url"
 import AdminNavbar from "../../components/AdminNavbar";
 
@@ -13,18 +13,17 @@ function PortfolioAdmin () {
     function PortfolioSubmit() {
         send(image)
         setTimeout(() => {
-            let img = data.pop()
             if (
                 category.trim() !== "" &&
                 githubUrl.trim() !== "" &&
                 serverUrl.trim() !== "" &&
-                img.trim() !== ""
+                comeimages.trim() !== ""
             ) {
                 API.post(createPortfolio, {
                     "category": category,
                     "githubUrl": githubUrl,
                     "serverUrl": serverUrl,
-                    "image": img,
+                    "image": comeimages,
                 })
                     .then(res => alert("Sucessfull"))
                     .catch(err => alert("Error"))

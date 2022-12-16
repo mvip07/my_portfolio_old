@@ -1,6 +1,6 @@
 import { useState } from "react"
 import API from "../axios/axios"
-import { data, send } from "../axios/firebaseSend"
+import { comeimages, send } from "../axios/firebaseSend"
 import { createTestimonial } from "../axios/url"
 
 function Contact() {
@@ -14,7 +14,6 @@ function Contact() {
     function TestimonialSubmit() {
         send(image)
         setTimeout(() => {
-            let img = data.pop()
             if (
                 name.trim() !== "" &&
                 email.trim() !== "" &&
@@ -26,7 +25,7 @@ function Contact() {
                     "email": email,
                     "subject": subject,
                     "message": message,
-                    "image": image === "" ? null : img,
+                    "image": image === "" ? null : comeimages,
                 }).then(res => {
                         alert ("Sucessfull")
                     }).catch(err => alert("Error"))

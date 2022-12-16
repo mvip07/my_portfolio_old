@@ -3,7 +3,7 @@ import AdminNavbar from "../../components/AdminNavbar";
 import {useParams} from "react-router-dom";
 import API from "../../../axios/axios";
 import {allPortfolio, updatePortfolio} from "../../../axios/url";
-import {data, send} from "../../../axios/firebaseSend";
+import {comeimages, send} from "../../../axios/firebaseSend";
 
 function UpdatePortfolio () {
 	const { id } = useParams()
@@ -23,15 +23,13 @@ function UpdatePortfolio () {
 	setTimeout(() => {for (let i of portfolio) if (i?._id === id ) setSelectPortfolio(i)}, 1000)
 	
 	function PortfolioUpdate (id) {
-		send(image)
-		let img = data.pop()
-		
+		send(image)		
 		setTimeout (() => {
 			API.post(`${updatePortfolio}/${id}`, {
 				"category": category.trim() === "" ? selectPortfolio.category : category,
 				"githubUrl": githubUrl.trim() === "" ? selectPortfolio.githubUrl : githubUrl,
 				"serverUrl": serverUrl.trim() === "" ? selectPortfolio.serverUrl : serverUrl,
-				"image": image === "" ? selectPortfolio.image : img,
+				"image": image === "" ? selectPortfolio.image : comeimages,
 			})
 				.then(res => alert("Sucessfull"))
 				.catch(err => alert("Error"))

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import API from "../../../axios/axios"
-import { send, data } from "../../../axios/firebaseSend"
+import { send, comeimages } from "../../../axios/firebaseSend"
 import { allAbout, updateAbout } from "../../../axios/url"
 import AdminNavbar from "../../components/AdminNavbar";
 
@@ -32,7 +32,6 @@ function UpdateAbout () {
 
     function AboutSubmit() {
         send(image)
-        let img = data.pop()
         setTimeout(() => {
             API.post(`${updateAbout}/${all?._id}`, {
                 "fullName": fullName.trim() === "" ? all.fullName : fullName,
@@ -50,7 +49,7 @@ function UpdateAbout () {
                 "instagramLink": instagramLink.trim() === "" ? all.instagramLink : instagramLink,
                 "linkedinLink": linkedinLink.trim() === "" ? all.linkedinLink : linkedinLink,
                 "description": desctrition.trim() === "" ? all.description : desctrition,
-                "image": image === "" ? all.image : img,
+                "image": image === "" ? all.image : comeimages,
             })
                 .then(res => alert("Sucessfull"))
                 .catch(err => alert("Error"))
